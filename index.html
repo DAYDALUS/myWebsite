@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../lightbulb/assignments.css"
+
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'LightBulb')">LightBulb</button>
+    <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
+  </div>
+
+  <div id="LightBulb" class="tabcontent">
+    <h3>Here is my Lightbulb</h3>
+    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    <script>function changeImage() {
+        var image = document.getElementById('myImage');
+        if (image.src.match("bulbon")) {
+            image.src = "pic_bulboff.gif";
+        } else {
+            image.src = "pic_bulbon.gif";
+        }
+    }
+    </script>
+  </div>
+  <div id="Journal" class="tabcontent">
+    <h3>Journal 6-13-17</h3>
+    <p> Today is the day before our departure to Camp. I went with my sister to buy the necessities for it. I went to Big 5 Sporting Goods and CVS. It was pretty cool seeing everything in the camping section. After that I went to the library to check out some books which I plant to read over the summer. I got home and decided to play with a few friends, until 3:00; I went to eat with my sister and from there she dropped me off at USC. I still don't know many people there except Isai, I think thats how it's spelled; and Luis too. However, I didn't see them. Six people had not brung their shirt or tie resultin in 60 pushups and then 4 people didn't bring their flash-drives, adding 40 pushups. We then went to take a survey at a building, cant remember the name, probably should. It was 7:30 at this time so my brother had to pick me up, we got home, got changed and went to our practice. from 8:30 to 10 at Azteca. From there I got home, took a shower, and went to sleep.  </p>
+  </div>
+
+
+<p> Click the light bulb to turn on/off the light.</p>
+
+<img id="Selfie" src="me.jpg" width="200"> <br>
+
+<p> Hello my name is Jonathan Estrada, and this is who I am. </p>
+
+<h1>Hobbies</h1>
+<h2>Guitar</h2>
+
+  <p> I began to play when I was in the 7th grade.
+    Origanlly, my father gave a small guitar as a gift in the 3rd grade.
+    I never really stuck to it, until I finally decided to try again.
+    Ever since then, I've continued to play, I don't focus around a specific genre, I like to learn different types of music.
+    I still continue to learn and expand my knowledge around it, trying to learn new techniques.
+    My family is glad I've decided to continue trying as they feel its a good hobby.</p>
+
+    <h2>Boxing</h2>
+
+      <p>As a little kid, my brother was a boxer, and had continued for 2 years.
+         I was in the middle, although my Dad hoped I was as enthusiastic as my brother and
+        hoped I would be as motivated as him. Then in 8th grade, my brother ended up going to a different gym,
+        that's when I decided to join him. Since then I've been a fighter for Azteca Boxing Club. It's been really fun.
+        I've met multiple people, trainers, and recruiters. I don't intend to be a proffesional fighter yet, but who knows,
+        perhaps one day. My experience with it was very nice, I always felt good when I would go, I'd always be greeted by others,
+        but my favorite times would be when there is a new fighter. It's always fun to introduce someone to it, even better when you teach
+        them.</p>
+
+        <h2>Video Games</h2>
+
+          <p>I didn't have a console as a kid. Making it difficult to understand what
+            others would be explaining during class. The only way I would understand, was if I would watch others
+            play it themselves. I really enjoyed playing on the PS3 or the Xbox 360, some friends and I would
+            meet up and eat pizza, play some games, then leave. It wasn't until Black Friday,
+            when I saved my money and bought a PS4. It's really fun when you can play with friends, sometimes go on for a few hours
+            connect with some people. I reached a point to play competively, not hugely, where there's an audience
+            but where we would play for money.
+      <h1>External Links</h1>
+      <p> I like to listen to music, watch tutorials, learn activities, and watch entertainment on <a href="https://www.youtube.com">Youtube</a></p>
+      <p> Probably the basis of everything. Mostly used to find an answer, look for a song,  <a href="https://www.google.com/">Google</a></p>
+      <p> I like to see what everyone is up at the moment, or text people when I need to talk to them. <a href="https://www.snapchat.com">Snapchat</a></p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "pic_bulboff.gif";
+    } else {
+        image.src = "pic_bulbon.gif";
+    }
+}
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
