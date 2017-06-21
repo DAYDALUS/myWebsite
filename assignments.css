@@ -1,12 +1,13 @@
 p {
-  font-weight:lighter;
-  font-family: arial;
-  color: black;
+  font-weight:heavier;
+  font-family: Arial;
+  color: black
+  ;
 
 }
 
 body {
-  background-color: white;
+  background-color: skyblue ;
 
 }
 

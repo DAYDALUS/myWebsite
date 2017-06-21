@@ -1,98 +1,153 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" type="text/css" href="../lightbulb/assignments.css"
 
+<head>
+
+  <link rel="stylesheet" type="text/css" href="../lightbulb/assignments.css">
 </head>
+
 <body>
   <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Me')">Me</button>
     <button class="tablinks" onclick="openCity(event, 'LightBulb')">LightBulb</button>
     <button class="tablinks" onclick="openCity(event, 'Journal')">Journal</button>
+    <button class="tablinks" onclick="openCity(event, 'Nikola Tesla')">Nikola Tesla</button>
   </div>
 
   <div id="LightBulb" class="tabcontent">
     <h3>Here is my Lightbulb</h3>
     <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
-    <script>function changeImage() {
+    <p>Click on the Light Bulb to turn it on :)</p>
+    <script>
+      function changeImage() {
         var image = document.getElementById('myImage');
         if (image.src.match("bulbon")) {
-            image.src = "pic_bulboff.gif";
+          image.src = "pic_bulboff.gif";
         } else {
-            image.src = "pic_bulbon.gif";
+          image.src = "pic_bulbon.gif";
         }
-    }
+      }
     </script>
   </div>
-  <div id="Journal" class="tabcontent">
-    <h3>Journal 6-13-17</h3>
-    <p> Today is the day before our departure to Camp. I went with my sister to buy the necessities for it. I went to Big 5 Sporting Goods and CVS. It was pretty cool seeing everything in the camping section. After that I went to the library to check out some books which I plant to read over the summer. I got home and decided to play with a few friends, until 3:00; I went to eat with my sister and from there she dropped me off at USC. I still don't know many people there except Isai, I think thats how it's spelled; and Luis too. However, I didn't see them. Six people had not brung their shirt or tie resultin in 60 pushups and then 4 people didn't bring their flash-drives, adding 40 pushups. We then went to take a survey at a building, cant remember the name, probably should. It was 7:30 at this time so my brother had to pick me up, we got home, got changed and went to our practice. from 8:30 to 10 at Azteca. From there I got home, took a shower, and went to sleep.  </p>
+  <div id='Journal' class="tabcontent">
+    <h3>6/13/17</h3>
+    <p> Today is the day before our departure to Camp. I went with my sister to buy the necessities for it. I went to Big 5 Sporting Goods and CVS. It was pretty cool seeing everything in the camping section. After that I went to the library to check out
+      some books which I plant to read over the summer. I got home and decided to play with a few friends, until 3:00; I went to eat with my sister and from there she dropped me off at USC. I still don't know many people there except Isai, I think thats
+      how it's spelled; and Luis too. However, I didn't see them. Six people had not brung their shirt or tie resultin in 60 pushups and then 4 people didn't bring their flash-drives, adding 40 pushups. We then went to take a survey at a building, cant
+      remember the name, probably should. It was 7:30 at this time so my brother had to pick me up, we got home, got changed and went to our practice. from 8:30 to 10 at Azteca. From there I got home, took a shower, and went to sleep. </p>
+    <h3>6/14/17-Human Knot</h3>
+    <p>I was in a group that lacked a lot of communication in the beginning, but we got around it in the end. It took us very long, we had to reset multiple times. It wasn't until after dinner, that people from our group decided to ask each other about methods
+      of solving it. Then we were really close but turns out we had two circles. But with us being able to solve it gave us more confidence, some wanted to quit and start over, but I shared something I saw, making us continue and finish it in the end.
+      When we finished the other two groups congradulated us, and we were all happy. We then did it with an even bigger group, I really enjoyed working with my group because it gave us the chance to work together as as a team and as brothers. We also
+      did a Trust Walk where we had a partner blindfold us and guide us on a path, the only thing we had as a resource was their guidance, It really helped me trust Abel more because he got me to the lodge safely and was really fun as well. </p>
+    <h4>Night Time - Oscars Idea</h4>
+    <p>Oscar came at 10pm and talked about many things, the most important one of them being, "80% of the people in this world dont have the capacity to create new ideas, because they don't pay attention to the details around him." When I heard it I understood
+      it as that some people are too unoriginal to create their own paths. I realized that I need to improve on my involvment, because if I don't share all the ideas I have, I can not improve myself. Some people are not detail orientated</p>
+    <h3>6/15/17<h3>
+        <h4>Morning</h4>
+        <p>I got an ok sleep last night, it was pretty nice listening to all of the sounds from the night. There were warm showers which I'm completely glad for, and made it all better. I'm really looking foward to the activities we'll be doing because I think they will be challenging and fun. Push up count is at 290, that should be exciting. After that we had breakfast, but before that we had a mnetal march, in which we were asked, "How did I grow yesterday." I saw my self growing as I introduced my ideas and we were able to finish the human knot.</p>
+        <h4>Lunch</h4>
+        <p>We did three activities, each asking a different question. In order they go, "Who are you? Who do you pretend to be? and Who do people think you are?" Before that we had a small competition on who could reach the top of the hill firstt, our team won(Google). I think we planned it out well, we discussed we were going to walk at first and run in the end, resulting in our victory. After lunch we finished that activity and returned to the lodge. Rob and the others put the Elite Seals in a rooom, where the activity was, "How well can you follow instructions" and we chanted, "HabiBabi and the Forty Thieves" and follow the leader. I really liked it as we were all able to follow the leader successfully after 2 or 3 tries. I don't think how people think of me could be exact, considering I might have different personalities with different people. Me as a person could care less what others think about me, I just recognized them as usless comments, however, if someone has constructive criticism, I'd be more than glad to accept it. Oscar talked about us managing our time, how from now on out, no one will remind us about a deadline. </p>
+        <h4>Night Time </h4>
+        <p>We did one last activity before going to sleep, and that was "which animal do we closely relate to?" I feel I am closest to a Turtle because I like to take my time on certain objectives, I can get it right. But if I were to be put in a more speedy enviroment, I can work even faster, such as a turtle in water. After that, Oscar told us to go to the animal which we believe is impossibe to work with. And to that, from the beginning, I thought, why would we do that? I think the whole point is to find a solution on how we can work with that person, and to my suprise, we did that. I learned of INTERGRATIVE THINKING, in definition is, "When two people with ideas face each other, instead of battling it out, use that tension and ideas to create an even better idea than the other two. " </p>
+      <h3>6/16/17</h3>
+    <p>My cabin and I woke up 30 minutes behind schedule. But because I knew we were going to do a lot of movement, I decided to use my shorts. One of our borthers, Rafael, lost his bandana; but, instead of just making an excuse on not being able to find
+      it, he just took one and taking initiave. Apreciate the hustle. </p>
+    <h4>After lunch</h4>
+    <p>We started the lava game, just the hike down and up really was tiring, I tried to preserve my water as much as I could but I didn't have any. Until I asked Rafael for some, and he did which I'm greatly thankful for. I gave some to those who didn't
+      have any water at all. I'm sort of mad at myself because I am not sharing my ideas, I think if I do, we can get a lot farther, so I will try when we got back down.
+      <p/>
+      <h4>Night Time</h4>
+      <p>I was able to share my idea, and because of that we were able to execute the plan and we got farther, but we deviated from that plan and changed it. We changed groups and leaders, Im currently in the Honda Group. But I've now realized that this
+        game isn't about brute strength, or how many people you can carry. It's about how well you can think and do plans. We also talked about the importance of being proactive, and how we need to keep moving foward as a unit and together, I'm quite
+        confident that'll be really helpful as we finish the lava game.</p>
+      <h3>6/17/17</h4>
+        <h4>Morning</h4>
+        <p>I woke up at 4:30, it was supposed to be at 4:00, but one of our cabin mates left and he was the one with the alarm, but thankfully, Bryan woke us up as 4:30 and we were able to get to the ampetheatre early. Props to him. We got to the park early so we could finish a lot faster and have enough time for other activities. We switched groups one last time, I was put with the Honda Group. Although I didn't restate my idea, about the pattern, I told others and they announced it, I still need to work on my social skills and being able to share with others. We were able to finalize on what all the coaches meant as planning, and were able to create an actual plan. We got confused on one part but were able to correct it in less than 2 minutes. It made me really happy. After that, we were able to continue and travel across the lava like clock work, and it was really fun too. We ended up winning but throughout the entire activity, we tried rooting for the google team as well. We did that because Laqeisha stated we were all unit and we move foward as a unit. We got to have the longest break in my opinion, which I'm grateful for. There was a small forest fire but nothing to worry about, a lot of smoke and ash in the air. We went to go get ice cream, which made me happy, Thanks/Props to Roxanne. We had a really tasty breakfast which I really enjoyed, it made me feel even more determined to finish the activity because of it. </p>
+        <h4> 7:00pm</h4>
+        <p> We did three more activities which I really liked. First being the story, where we drew images and the one coming after has to relate to it in some way. The second activity was the the captains command. In this activity we had to follow the leader and what he was saying, "Man Overboard, Crows Nest, ChowTime, and Plank" They were all really fun and it was a test to see how fast we can react to instructions that are given on the spot. Lastly, we did the the Stick Game. We were told we would not get it on the first try, it was a complicated game and that we should have patience. There were also three very useful and important tips Oscar told us that I will utilize in the future of my life. In order they went, "Do not focus on the problem, Think Outside The Box, and The answer might be right underneath your nose" Although I knew the 1st tip and what it meant, I still kept foxusing on the problem, until I finally understood what he meant. I was relieved and got the chance to fully realize the true meaning of those tips. Sadly I had to leave camp early inorder to attend my sisters graduation but before I left, I said Goodbye to those people and had some emotional train going on, I was so happy and sad at the same time, but getting out felt so much better. I got home around 4 and was extremely tired.</p>
+        <h3>6/18/17</h3>
+      <h4>Sister's Graduation</h4>
+      <p>Today I woke up at 7, I was still very tired but my relatives came and I had to greet them. It had been a year since I've seen them so I was quite ecstatic to meet them once more. We went to eat at some Korean All you cant eat, but where you cook
+        your own food. It was really fun but I got really full. It was time for the ceremony to begin and it was all so very excited to see, there were dancers, singers, and speech giver, all who were very interesting. Later after the ceremony we went
+        to eat and had a good time. It was time for everyone to depart, I went home and gone to sleep.</p>
+      <h3>6/19/17</h3>
+      <p>Nothing special really happened today, I got some sleep, did some homework, read a chapter of the lean start-up and went to bed.</p>
+      <h3>6/20/17</h3>
+      <h4>Techie Tuesday</h4> Today was really fun, I worked on my website, I've nearly finished everything and am very happy with my progress. I went to the cube to see if anyone needed any additional help, I needed assistance on Heroku but I didn't see any of the SEAL's show
+      up, only until the end, but they were busy, So I figured I'll just stay up and finish as much as I could. I learned a lot about bitcoin, seeing as how it's a growing market and sill soon be a very important role in todays society, which has me very
+      excited to see. Note to self: DONT EVER PLAY GAMES AT THE CUBE,
+
   </div>
 
+  <div id="Nikola Tesla" class="tabcontent">
+    <img id="Nikola.Tesla" src="Nikola.Tesla.jpg" width="200">
+    <h3> Nikola Tesla</h3>
+    <p>Nikola Tesla was an inventor, with that in mind, he shaped the future, the present for us. He invented A/C, The tesla coil,The Magnifying Transmitter, The Tesla Turbine, Shadowgraphs/X-RAYS, Radio, The Induction Motor, and multiple other inventions.
+      Yet despite all of this, he ended up being broke, perhaps it's not the type of life most of us are looking to seek, he didn't care, he cared more about the thought of his inventions. And if they were used to invest in a better future, he was all
+      for it. As a young boy, his mother was an inventive homemaker who created household appliances. He had an eidetic memory, received early education from Smiljan. He attended the Austrian Polytechnic in Graz, Austria; he was doing very well in his
+      first year, however, he got addicted to gambling in his second, causing him to ruin his graduation and unable to obtain a degree. The point being, he had a great start but he ruined it, that didn't stop him from becoming one of the most influental
+      persons who once roamed this Earth.
 
-<p> Click the light bulb to turn on/off the light.</p>
+    </p>
 
-<img id="Selfie" src="me.jpg" width="200"> <br>
+  </div>
 
-<p> Hello my name is Jonathan Estrada, and this is who I am. </p>
+  <div id='Me' class="tabconent">
 
-<h1>Hobbies</h1>
-<h2>Guitar</h2>
+    <img id="Selfie" src="me.jpg" width="200"> <br>
 
-  <p> I began to play when I was in the 7th grade.
-    Origanlly, my father gave a small guitar as a gift in the 3rd grade.
-    I never really stuck to it, until I finally decided to try again.
-    Ever since then, I've continued to play, I don't focus around a specific genre, I like to learn different types of music.
-    I still continue to learn and expand my knowledge around it, trying to learn new techniques.
-    My family is glad I've decided to continue trying as they feel its a good hobby.</p>
+    <p> Hello my name is Jonathan Estrada, and this is who I am. </p>
+
+    <h1>Hobbies</h1>
+    <h2>Guitar</h2>
+
+    <p>I began to play when I was in the 7th grade. Origanlly, my father gave a small guitar as a gift in the 3rd grade. I never really stuck to it, until I finally decided to try again. Ever since then, I've continued to play, I don't focus around a specific
+      genre, I like to learn different types of music. I still continue to learn and expand my knowledge around it, trying to learn new techniques. My family is glad I've decided to continue trying as they feel its a good hobby.</p>
 
     <h2>Boxing</h2>
 
-      <p>As a little kid, my brother was a boxer, and had continued for 2 years.
-         I was in the middle, although my Dad hoped I was as enthusiastic as my brother and
-        hoped I would be as motivated as him. Then in 8th grade, my brother ended up going to a different gym,
-        that's when I decided to join him. Since then I've been a fighter for Azteca Boxing Club. It's been really fun.
-        I've met multiple people, trainers, and recruiters. I don't intend to be a proffesional fighter yet, but who knows,
-        perhaps one day. My experience with it was very nice, I always felt good when I would go, I'd always be greeted by others,
-        but my favorite times would be when there is a new fighter. It's always fun to introduce someone to it, even better when you teach
-        them.</p>
+    <p>As a little kid, my brother was a boxer, and had continued for 2 years. I was in the middle, although my Dad hoped I was as enthusiastic as my brother and hoped I would be as motivated as him. Then in 8th grade, my brother ended up going to a different
+      gym, that's when I decided to join him. Since then I've been a fighter for Azteca Boxing Club. It's been really fun. I've met multiple people, trainers, and recruiters. I don't intend to be a proffesional fighter yet, but who knows, perhaps one
+      day. My experience with it was very nice, I always felt good when I would go, I'd always be greeted by others, but my favorite times would be when there is a new fighter. It's always fun to introduce someone to it, even better when you teach them.
+    </p>
 
-        <h2>Video Games</h2>
+    <h2>Video Games</h2>
 
-          <p>I didn't have a console as a kid. Making it difficult to understand what
-            others would be explaining during class. The only way I would understand, was if I would watch others
-            play it themselves. I really enjoyed playing on the PS3 or the Xbox 360, some friends and I would
-            meet up and eat pizza, play some games, then leave. It wasn't until Black Friday,
-            when I saved my money and bought a PS4. It's really fun when you can play with friends, sometimes go on for a few hours
-            connect with some people. I reached a point to play competively, not hugely, where there's an audience
-            but where we would play for money.
+    <p>I didn't have a console as a kid. Making it difficult to understand what others would be explaining during class. The only way I would understand, was if I would watch others play it themselves. I really enjoyed playing on the PS3 or the Xbox 360,
+      some friends and I would meet up and eat pizza, play some games, then leave. It wasn't until Black Friday, when I saved my money and bought a PS4. It's really fun when you can play with friends, sometimes go on for a few hours connect with some
+      people. I reached a point to play competively, not hugely, where there's an audience but where we would play for money.
       <h1>External Links</h1>
       <p> I like to listen to music, watch tutorials, learn activities, and watch entertainment on <a href="https://www.youtube.com">Youtube</a></p>
-      <p> Probably the basis of everything. Mostly used to find an answer, look for a song,  <a href="https://www.google.com/">Google</a></p>
+      <p> Probably the basis of everything. Mostly used to find an answer, look for a song, <a href="https://www.google.com/">Google</a></p>
       <p> I like to see what everyone is up at the moment, or text people when I need to talk to them. <a href="https://www.snapchat.com">Snapchat</a></p>
+  </div>
 
-<script>
-function changeImage() {
-    var image = document.getElementById('myImage');
-    if (image.src.match("bulbon")) {
+  <script>
+    function changeImage() {
+      var image = document.getElementById('myImage');
+      if (image.src.match("bulbon")) {
         image.src = "pic_bulboff.gif";
-    } else {
+      } else {
         image.src = "pic_bulbon.gif";
+      }
     }
-}
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
+
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
     }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script>
+  </script>
 
 </body>
+
 </html>
