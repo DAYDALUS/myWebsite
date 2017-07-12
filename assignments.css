@@ -1,19 +1,15 @@
 p {
   font-weight:heavier;
   font-family: Arial;
-  color: #d1b516;
+  color: White;
   ;
 
 }
 
 body {
-  background-color: skyblue ;
-  background-image: url(http://danieljknaggs.com/wp-content/uploads/2014/06/m16.jpg);
-  background-size: cover;
-}
-
-p.insent {
-  border-style: inset;
+  background-image: url(./img/sunset.jpg);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 body {font-family: "Lato", sans-serif;}
 
@@ -58,7 +54,7 @@ h1 {
   color: #76d636;
 }
 h2 {
-color: #d11654;
+color: black;
 
 }
 
@@ -71,4 +67,9 @@ color: #36d656
 h4 {
 color: #9636d6;
 
+}
+
+#Nik {
+
+  color: White ;
 }

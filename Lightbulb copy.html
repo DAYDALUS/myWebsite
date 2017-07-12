@@ -1,0 +1,73 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="jquery.ui.effect-swirl.js"></script>
+
+
+ </head>
+ <body>
+
+
+
+<div   style="lightbulb"></div>
+   <p>Hover over the Light Bulb to turn it on :)</p>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js">
+   </script>
+        <img id="lightbulb" onmouseover="changeImage(this)" onmouseout="resetImg(this)" src="pic_bulboff.gif" >
+        <img id="wand" src="wand.png" width="100">
+        <img id="patronus" src="patronus.png" width="40" >
+        <img id="patronus2" src="patronus2.png" width="0">
+        <img id="wizard" src="wizard.png" width="0">
+
+  <script>
+  function changeImage() {
+      document.getElementById("lightbulb").src="pic_bulbon.gif";
+
+  }
+
+  function resetImg() {
+      document.getElementById("lightbulb").src="pic_bulboff.gif";
+
+  }
+
+  $(document).ready(function(){
+    $("#lightbulb").click(function(){
+        $("#wand").animate({'height': "100px"});
+    });
+    $("#lightbulb").click(function(){
+        $("#wand").animate({'height': "100px"});
+    });
+    $("#lightbulb").click(function(){
+        $("#wizard").animate({'height': "300px", 'width': "300px"});
+
+  });
+  $("#lightbulb").click(function(){
+      $("#patronus").animate({'height': "0px", 'width': "0px"});
+
+  });
+  $("#lightbulb").click(function(){
+      $("#patronus2").animate({'height': "300px", 'width': "300px"});
+
+  });
+
+
+});
+
+  </script>
+  <style>
+  #body{
+      margin:200px;
+      padding:150px;
+      background:#ddd;
+      border:solid thin #777;
+      width:200px;
+  }
+
+  </style>
+ </body>
+ </html>

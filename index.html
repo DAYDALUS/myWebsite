@@ -4,11 +4,21 @@
 <head>
 
   <link rel="stylesheet" type="text/css" href="assignments.css">
+  <style>
+       #map {
+        height: 400px;
+        width: 50%;
+       }
+    </style>
 </head>
 <center>
 <body>
+
+  <body vlink="red">
+  <p id="link"><a href="map.html">Find out where we're located! :)</a></p>
   <h1>
-    Hi! Welcome to my Webpage, feel free to look around.
+    Hi! Welcome to my Webpage, feel free to look around.<br>
+    Click Below to learn about me :)
   </h1>
   <center>
   <div class="tab">
@@ -21,15 +31,15 @@
 
   <div id="LightBulb" class="tabcontent">
     <h3>Here is my Lightbulb</h3>
-    <img id="myImage" onclick="changeImage()" src="pic_bulboff.gif" width="100" height="180">
+    <img id="myImage" onclick="changeImage()" src="./img/pic_bulboff.gif" width="100" height="180">
     <p>Click on the Light Bulb to turn it on :)</p>
     <script>
       function changeImage() {
         var image = document.getElementById('myImage');
         if (image.src.match("bulbon")) {
-          image.src = "pic_bulboff.gif";
+          image.src = "./img/pic_bulboff.gif";
         } else {
-          image.src = "pic_bulbon.gif";
+          image.src = "./img/pic_bulbon.gif";
         }
       }
     </script>
@@ -84,12 +94,24 @@
       up, only until the end, but they were busy, So I figured I'll just stay up and finish as much as I could. I learned a lot about bitcoin, seeing as how it's a growing market and sill soon be a very important role in todays society, which has me very
       excited to see. Note to self: DONT EVER PLAY GAMES AT THE CUBE,
     </p>
+    <h3>6/21/17</h3>
+    <p>It's 2 am and I just finished my website, it's now on heroku, so happy I can sleep. We also talked about roles, and how each one has their strengths and weakness, if all communicate and play in synce, their teamwork may be unstoppable. The analogy used was a basketball game, presented by Valentino. Oscar gave us a tip about being egotistical, there are certain things you can control and things you can not, however, just because you can't control it, doesn't mean you shouldn't try it.</p>
+    <h3>6/22/17</h3>
+    <p>Today I met my very first multimillionare, although I was late, which I'm sorry for, It was very cool and interesting to realize, he looks like any of us. He worked as a recruiter for CISCO, and then moved to being a Compensator, Google, then Facebook. He explained some very important things, 1) Set a Goal, if you don't, how do you expect to reach your destination without one? 2) If you don't talk to people who have already done it, how would you do it? Seek help,-Even geniuses ask questions?- and 3) You have to have the Grit and Will to persevere and not give up, even when you're really close, and didn't quite make it; Iterate and repeat. I really liked what he said(or was it oscar?), more specifcally, "If you don't believe in yourself, who will believe in you? BELIEVE IN YOURSELF!" We also shared our special item, there were a lot of cool things people hold valuable into themselves, it was all very interesting to see. We also looked on about how we are going to gain info about our company, it was a nice activity that got me thinking about questions I'd ask or be asked.
+    </p>
+    <h3>6/23/17</h3>
+    <p>We did rapid fires in the morning, pretty much to see how much we were actually paying attention during class, I think it's really fun to see how much we remember or payed attention, but we need to do them quick, otherwise we are only wasting time. I need to start speaking more, I only speak when I'm told to or pressured to. We learned about design thinking, Derek was caught day dreaming, that was pretty funny. Basically there are 5 steps , 1)Empathize-To understand your audience, understand their wants, values, and needs. 2)Define-Define what the problem is, gather ideas on how to solve the problem, don't ask biases questions, know people better. 3)Ideate-The brainstorming stage, use your imagination, It can be anything(Hal-Using asteroids for rock fidget spinners) Build upon Ideas. 4)Prototype-The unfinished product of the project, the beta. It can be as simple as describing it, pen and paper, or a drawing. (Freddy's Dilemma- Friends wouldn't recognize his thinking
+    mode, he tried his hat, headphones, but none would work, he then made a small hat, with Txt scratch paper, it ended up being perfect, a thinking hat. From there on, his friends saw it and didn't bother him.) 5)Iterate-Take everything that worked, fix the issues, and implement the ideas again, you never want to settle, always seek room for improvement.
+    <h3>6/24/17</h3>
+    <p>Learning about the 10-20-30 rule.</p>
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
   </div>
 
+
   <div id="Nikola Tesla" class="tabcontent">
-    <img id="Nikola.Tesla" src="tesla.jpg" width="200">
-    <h3>Nikola Tesla</h3>
+    <img id="Nikola.Tesla" src="./img/tesla.jpg" width="200">
+    <h3 id="Nik"> Nikola Tesla</h3>
     <p>Nikola Tesla was an inventor, with that in mind, he shaped the future, the present for us. He invented A/C, The tesla coil,The Magnifying Transmitter, The Tesla Turbine, Shadowgraphs/X-RAYS, Radio, The Induction Motor, and multiple other inventions.
       Yet despite all of this, he ended up being broke, perhaps it's not the type of life most of us are looking to seek, he didn't care, he cared more about the thought of his inventions. And if they were used to invest in a better future, he was all
       for it. As a young boy, his mother was an inventive homemaker who created household appliances. He had an eidetic memory, received early education from Smiljan. He attended the Austrian Polytechnic in Graz, Austria; he was doing very well in his
@@ -102,7 +124,7 @@
 
   <div id='Me' class="tabcontent">
 
-    <img id="Selfie" src="me.jpg" width="200"> <br>
+    <img id="Selfie" src="./img/me.jpg" width="200"> <br>
 
     <p> Hello my name is Jonathan Estrada, and this is who I am. </p>
 
@@ -131,14 +153,6 @@
   </div>
 
   <script>
-    function changeImage() {
-      var image = document.getElementById('myImage');
-      if (image.src.match("bulbon")) {
-        image.src = "pic_bulboff.gif";
-      } else {
-        image.src = "pic_bulbon.gif";
-      }
-    }
 
     function openCity(evt, cityName) {
       var i, tabcontent, tablinks;
@@ -154,6 +168,8 @@
       evt.currentTarget.className += " active";
     }
   </script>
+
+
 
 </body>
 

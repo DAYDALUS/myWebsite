@@ -1,0 +1,61 @@
+ <!DOCTYPE html>
+ <html lang="en">
+
+ <head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script src="jquery.ui.effect-swirl.js"></script>
+
+
+ </head>
+ <body>
+
+
+
+<div   style="lightbulb"></div>
+   <p>Hover over the Light Bulb to turn it on :)</p>
+   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js">
+   </script>
+        <center><img id="lightbulb" onmouseover="changeImage(this)" onmouseout="resetImg(this)" src="pic_bulboff.gif" ><br></center>
+        <img id="wand" src="wand.png" width="100">
+        <img id="patronus" src="patronus.png" width="40" >
+        <img id="patronus2" src="patronus2.png" width="0">
+        <img id="wizard" src="wizard.png" width="0">
+
+  <script>
+
+  $(document).ready(function(){
+   $("#lightbulb").mouseover(function(){
+     $("#lightbulb").attr("src","pic_bulbon.gif");
+     $('#wand').animate({
+         width: "30%",
+         transform: 'rotate(' + 100 + 'deg)',
+       }, 1000 );
+   });
+
+  $("#lightbulb").mouseout(function(){
+     $("#lightbulb").attr("src","pic_bulboff.gif");
+     $('#wand').animate({
+         width: "100px",
+         transform: 'rotate(' + 300 + 'deg)',
+       }, 1000 );
+
+  });
+  })
+
+  </script>
+  <style>
+#lightbulb {
+  margin-bottom: 300px;
+  margin: auto;
+}
+
+#wand {
+   margin-top: 200
+}
+
+  </style>
+ </body>
+ </html>
